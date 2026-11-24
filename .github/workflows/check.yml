@@ -19,3 +19,7 @@ jobs:
         run: python -m unittest discover -v
       - name: Run published demo
         run: python demo.py
+      - name: Check the in-process FastAPI boundary
+        run: |
+          python -m pip install -r requirements-demo.txt
+          python fastapi_demo.py

@@ -11,6 +11,8 @@ python -m unittest discover -v
 
 The demo prints a JSON report and exits with code 1 when any case fails.
 
+Run the same contract through real FastAPI routes, validation and a fresh in-process data store with `python -m pip install -r requirements-demo.txt` and `python fastapi_demo.py`. The fixture actor header is for TestClient only. Do not serve the fixture over a network.
+
 ## Integrate
 
 1. Define named fixture actors, resources and actions. Write grants independently of the implementation; all remaining combinations are denied.
